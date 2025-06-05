@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="password-generator">
+        <h1>Password Generator</h1>
+        <div class="options">
+            <label for="length">Length:</label>
+            <input type="number" id="length" value="12" readonly>
+            <label for="uppercase">Uppercase:</label>
+            <input type="checkbox" id="uppercase" checked>
+            <label for="numbers">Numbers:</label>
+            <input type="checkbox" id="numbers" checked>
+            <label for="symbols">Symbols:</label>
+            <input type="checkbox" id="symbols" checked>
+        </div>
+        <button id="generate">Generate Password</button>
+        <div class="password_container">
+        <input type="text" id="password" readonly>
+        <button id="copy" title="Copy to Clipboard"> <i class="fas fa-copy copy"></i></button>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
