@@ -123,3 +123,12 @@ span{
 .links a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 760px) {
+    #list{
+        padding: 0;
+    }
+    .underline{
+        width: 50%;
+    }
+}
