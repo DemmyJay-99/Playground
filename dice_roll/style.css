@@ -1,3 +1,88 @@
-body{
-    font-size: 2rem;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(135deg, #e0f7fa, #99289b);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #004d40;
+    }
+
+    .dice-container {
+        text-align: center;
+        background-color: #ffffffee;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .controls input {
+        width: 50px;
+        text-align: center;
+        font-size: 1.2rem;
+        border: 2px solid #004d40;
+        border-radius: 6px;
+        padding: 4px 8px;
+    }
+
+    button {
+        background-color: #00796b;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #004d40;
+    }
+
+    #diceresult {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #00695c;
+    }
+
+    #diceimages {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #diceimages img {
+        width: 60px;
+        height: 60px;
+    }
+
+    @media (max-width: 760px) {
+        body{
+            background-color: #004d40;
+        }
+    }
