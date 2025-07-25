@@ -95,6 +95,6 @@ button:active{
 
 @media (max-width: 480px) {
     #calculator{
-        height: 150px;
+        max-height: 550px;
     }
 }
