@@ -23,17 +23,6 @@ h1{
     font-size: 50px;
 }
 
-.underline{
-    position: relative;
-    left: 40%;
-    width: 70vh;
-    height:6px;
-    margin-top: 9px;
-    background-image: linear-gradient(yellow);
-    background-repeat: no-repeat;
-    background-size: 70% 1px;
-}
-
 #list{
     display: flex;
     flex-wrap: wrap;
