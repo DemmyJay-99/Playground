@@ -97,4 +97,8 @@ button:active{
     #calculator{
         max-height: 550px;
     }
+
+    body{
+        height: 100vh;
+    }
 }
