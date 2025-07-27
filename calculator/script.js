@@ -15,3 +15,8 @@ function calculate(){
         display.value = "Error";
     }    
 }
+
+function calculateSin(){
+    const input = parseFloat(display.value);
+    display.value = Math.sin(input);
+}
