@@ -6,7 +6,7 @@ function appendToDisplay(input){
 
 function clearDisplay(){
     display.value = "";
-}
+};
 
 function calculate(){
     try {
@@ -14,13 +14,17 @@ function calculate(){
     } catch (error) {
         display.value = "Error";
     }    
-}
+};
 
 function calculateSin(){
     const input = parseFloat(display.value);
     display.value = Math.sin(input);
-}
+};
 
+function calculateCos(){
+    const input = parseFloat(display.value);
+    display.value = Math.cos(input);
+};
 // const allowedKeys = ['0','1','2','3','4','5','6','7','8','9','+','-','*','/','.'];
 
 // <!DOCTYPE html>
