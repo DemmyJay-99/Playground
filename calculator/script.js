@@ -18,17 +18,29 @@ function calculate(){
 
 function calculateSin(){
     const input = parseFloat(display.value);
-    display.value = Math.sin(input);
+    if (!isNaN(input)) {
+        display.value = Math.sin(input);
+    } else {
+        display.value = "";
+    }
 };
 
 function calculateCos(){
     const input = parseFloat(display.value);
-    display.value = Math.cos(input);
+    if (!isNaN(input)) {
+        display.value = Math.cos(input);
+    } else {
+        display.value = "";
+    }
 };
 
 function calculateTan(){
     const input = parseFloat(display.value);
-    display.value = Math.tan(input);
+    if (!isNaN(input)) {
+        display.value = Math.tan(input);
+    } else {
+        display.value = "";
+    }
 };
 // const allowedKeys = ['0','1','2','3','4','5','6','7','8','9','+','-','*','/','.'];
 
