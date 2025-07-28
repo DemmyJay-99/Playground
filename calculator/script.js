@@ -19,7 +19,7 @@ function calculate(){
 function calculateSin(){
     const input = parseFloat(display.value);
     if (!isNaN(input)) {
-        display.value = Math.sin(input);
+        display.value = Math.sin(input).toFixed(4);
     } else {
         display.value = "";
     }
@@ -28,7 +28,7 @@ function calculateSin(){
 function calculateCos(){
     const input = parseFloat(display.value);
     if (!isNaN(input)) {
-        display.value = Math.cos(input);
+        display.value = Math.cos(input).toFixed(4);
     } else {
         display.value = "";
     }
@@ -37,7 +37,7 @@ function calculateCos(){
 function calculateTan(){
     const input = parseFloat(display.value);
     if (!isNaN(input)) {
-        display.value = Math.tan(input);
+        display.value = Math.tan(input).toFixed(4);
     } else {
         display.value = "";
     }
