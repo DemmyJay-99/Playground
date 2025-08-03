@@ -8,7 +8,7 @@ body{
     display: flex;
     place-content: center;
     place-items: center;
-    height: 120vh;
+    height: 150vh;
     background-color: hsl(0, 0%, 95%);
     flex-direction: column;
 }
@@ -45,6 +45,7 @@ header{
     max-width: 350px;
     overflow: hidden;
     height: 100vh;
+    margin-bottom: 50px;
 }
 
 #display{
@@ -95,7 +96,7 @@ button:active{
 
 @media (max-width: 480px) {
     #calculator{
-        max-height: 550px;
+        min-height: 500px;
     }
 
     body{
