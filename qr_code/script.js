@@ -1,30 +1,25 @@
-function generate() {
-    const text = document.querySelector(".text").value;
-    const qr = document.querySelector(".qr");
-    qr.innerHTML="";
-    if (!text.trim()) {
-        alert("Enter some text man");
-        return;
-    }
-    QRCode.toCanvas(text, {width:150}, function (error, canvas){
-        if (error) {
-            console.error(error);
-            alert("Failed to generate QR code");
-            return;
-        }
-        qr.appendChild(canvas);
-    });
+const button = document.querySelector("button");
+
+function generateQR() {
+  const input = document.getElementById("qr").value.trim();
+  const img = document.getElementById("qrimg");
+
+  if (!input) {
+    alert("Please enter some text or URL");
+    return;
+  }
+
+  img.src =
+    "https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=" +
+    encodeURIComponent(input);
+  img.classList.add("show");
 }
 
-const theme = document.querySelector('.theme');
-theme.addEventListener('click', () => {
-    document.body.classList.toggle('light-theme');
-    
-    if ( document.body.classList.contains('light-theme')) {
-        theme.innerHTML = "🌜";
-    } else {
-        theme.innerHTML = "☀️";
-    };
+// Generate QR when pressing Enter key
+document.getElementById("qr").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    generateQR();
+  }
+});
 
-}
-);
+button.addEventListener('click', generateQR);

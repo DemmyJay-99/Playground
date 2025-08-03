@@ -1,127 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 100vh;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-   background-color: rgb(40, 5, 22);
+    min-height: 100vh;
+    background-color: #e8e8e8;
 }
 
-body.light-theme{
-    background-color: #e2c7c7;
-    color: black;
-}
-
-body.light-theme section{
-    border: 0;
-}
-
-body.light-theme .btn{
-    color: black;
-    background: none;
-    background-color: rgb(188, 188, 226);
-    border: 3px solid;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-body.light-theme .text{
-    color: black;
-    background: #ddd;
-}
-
-section{
+.container {
+    width: 90%;
+    max-width: 350px;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     text-align: center;
-    height: 320px;
-    width: 300px;
-    border: solid 2px black;
-    border-radius: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+}
+
+#qrimg {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+
+    background: white;
     padding: 10px;
-    gap:15px;
-    transition: background-color 0.4s;
-    box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-.qr{
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-.text{
-    border-radius: 10px;
-    height: 15%;
-    width: 100%;
-    outline: none;
-    border: 0;
-    border: 1px solid #34495e;
-    text-align: center;
-    background-color: transparent;
-    overflow: hidden;
-    margin-top: 4%;
-    margin-bottom: 10px;
-    color: blue;
-    font-size: 15px;
-}
-
-.btn{
-    height: 15%;
-    width: 100%;
-    margin-top: 5px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    padding: 12px;
-    font-size: 16px;
-    pointer-events: stroke;
-    color: #fff;
-    background:linear-gradient(45deg,red,blue);
-    cursor: pointer;
-    transition: transform 0.2s ease, background 0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.02);
-    background: linear-gradient(to-right, #5b0eaa,#1d5ed0);
-}
-
-.theme{
-    border: none;
-    border-radius: 10px;
-    padding: 7px;
-    position: fixed;
-    font-size: 30px;
-    top: 20px;
-    right: 20px;
-    background-color: rgb(27, 5, 48);
-}
-
-.tooltip{
+    border-radius: 8px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
     opacity: 0;
-    cursor: crosshair;
-    top: 80px;
-    right: 20px;
-    position: fixed;
-    color:yellow;
-    width: 50px;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: rgb(27, 5, 48);
-    transition: opacity .2s, visiblity 2s;
-    z-index: 10;
 }
 
-.theme:hover .tooltip{
-    visibility: visible;
+#qrimg.show {
     opacity: 1;
+}
+
+button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5a52e0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
 }
