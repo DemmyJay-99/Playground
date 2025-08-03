@@ -15,8 +15,9 @@ body{
 
 h1{
     margin-bottom: 30px;
-    background: yellow;
-    background-clip: text;
+    background: linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .wrapper{
