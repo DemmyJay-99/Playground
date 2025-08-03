@@ -7,9 +7,16 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     place-content: center;
     place-items: center;
     background: linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
+}
+
+h1{
+    margin-bottom: 30px;
+    background: yellow;
+    background-clip: text;
 }
 
 .wrapper{
@@ -47,7 +54,7 @@ body{
     margin-bottom: 10px;
 }
 
-input {
+.box input {
     width: 100%;
     margin-right: 10px;
     border: 0;
@@ -81,4 +88,12 @@ li {
     color: #e6e6e6;
     user-select: none;
     box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.409);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    input{
+        outline: none;
+        border: 0;
+    }
 }
