@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do list</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
@@ -17,6 +18,14 @@
     <ul id="content"> 
     </ul>
     </div>
+    <form action="https://formcarry.com/s/saQ4Z2yvNBc" method="POST">
+        <label for="suggestions">Give me feedback</label>
+        <input type="text" name="feedback" id="feedback" class="feedback" placeholder="Give me your feedback...">
+        <input type="hidden" name="_next" value="google.com">
+        <button type="submit" class="button" id="button"><i class="fa-solid fa-paper-plane"></i>
+        </button>
+    </form>
     <script defer src="script.js"></script>
+    <script defer src="../scripts/script.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@ h1{
 
 .wrapper{
     background-color: #aa3678;
-    height: 300px;
+    max-height: 310px;
     display: flex;
     padding: 30px;
     border-radius: 10px;
@@ -31,6 +31,7 @@ h1{
     overflow-y:auto;
     scrollbar-width: none;
     transition: all .3s;
+    margin-bottom: 30px;
 }
 
  .wrapper.wrapper::-webkit-scrollbar {
