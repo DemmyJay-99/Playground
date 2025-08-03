@@ -99,6 +99,10 @@ li {
     }
 }
 
+li.done{
+    background-color: #aa3678;
+}
+
 i{
     cursor: pointer;
 }
