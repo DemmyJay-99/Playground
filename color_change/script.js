@@ -1,5 +1,6 @@
 const code = document.getElementById('colorCode');
 const changeBtn = document.getElementById('change');
+const copyBtn = document.getElementById('copy-btn');
 
 function getRandomColor() {
     const randomColor = Math.floor(Math.random() * 16777215);
@@ -11,4 +12,14 @@ function changeColor() {
     document.body.style.backgroundColor = `#${newColor}`;
     code.textContent = `#${newColor}`;
     changeBtn.style.backgroundColor = `#${newColor}`;
+}
+
+function copyToClipboard() {
+  const text = colorCode.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    copyBtn.textContent = 'Copied';
+    setTimeout(() => {
+      copyBtn.innerHTML = '<i class="fa-solid fa-copy"></i>';
+    }, 2000);
+  });
 }
