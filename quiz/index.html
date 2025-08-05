@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Quiz</h1>
+    <br>
+    <div class="container" id="box">
+        <h2 id="quiz">What's going on?</h2>
+
+        <div class="row">
+            <input class="answers" type="radio" name="radio" id="option1"
+            value="a">
+            <label for="option1">Option 1</label>
+        </div>
+
+        <div class="row">
+            <input class="answers" type="radio" name="radio" id="option2"
+            value="b">
+            <label for="option2">Option 2</label>
+        </div>
+
+        <div class="row">
+            <input class="answers" type="radio" name="radio" id="option3"
+            value="c">
+            <label for="option3">Option 3</label>
+        </div>
+
+        <div class="row">
+            <input class="answers" type="radio" name="radio" id="option4"
+            value="d">
+            <label for="option4">Option 4</label>
+        </div>
+
+        <button onclick="submitQuiz();">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
