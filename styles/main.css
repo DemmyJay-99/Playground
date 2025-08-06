@@ -31,14 +31,17 @@ h1{
     font-size: 50px;
 }
 
-#list{
+ #all, #utility, #fun{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     row-gap: 30px;  
     column-gap: 15px;
     padding: 2rem;
+}
+
+#utility, #fun {
+    display: none;
 }
 
 .card{
