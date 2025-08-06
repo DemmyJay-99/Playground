@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(120deg, #0c3359 60%, #1e90ff 100%);
+    height: 100vh;
+}
+section{
+    height: 100vh;
+}
+
+#one, #two{
+    display: none;
+}
