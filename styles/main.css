@@ -86,6 +86,10 @@ h1{
     opacity: 1;
 }
 
+.button:hover{
+    opacity: .4;
+}
+
  #all, #utility, #fun{
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +198,16 @@ span{
     }
     .underline{
         width: 50%;
+    }
+    .title{
+        h1{
+        font-size: 2rem;
+        margin-left: 30px;
+        width: 70vw;
+        }
+        width: 80vw;
+        place-items: center;
+        place-content: center;
     }
 }
 
