@@ -6,9 +6,16 @@ html{
     overflow-x: hidden;
 }
 
+:root {
+    --primary-yellow: #FFD100;
+    --dark-black: #121212;
+    --light-black: #1E1E1E;
+    --gray-light: #F0F0F0;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(153, 0, 0);
+    background-color: var(--light-black);
     color: white;
     /* display: flex; */
     flex-wrap: wrap;
@@ -31,6 +38,51 @@ h1{
     font-size: 50px;
 }
 
+.buttons{
+    width: 30vw;
+    height: 40px;
+    /* background-color: black; */
+    display: flex;
+    gap: 1.3rem;
+    padding: 20px; 
+    place-items: center;
+}
+
+.button{
+    width: 60px;
+    font-size: 1rem;
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    background-color: var(--dark-black);
+    color: var(--gray-light);
+    cursor: pointer;
+    opacity: .6;
+    transition: all .5s;
+}
+
+#all-button{
+    flex: 1;
+}
+
+#one-button{
+    flex: 2;
+}
+
+#two-button{
+    flex: 3;
+}
+
+.button:focus{
+    background-color: var(--primary-yellow);
+    color: #fff;
+    opacity: 1;
+}
+
  #all, #utility, #fun{
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +97,7 @@ h1{
 }
 
 .card{
-    background-color: rgb(153, 0, 0);
+    background-color: var(--light-black);
     height: 450px;
     width: 300px;
     border: 3px solid transparent;
@@ -56,7 +108,7 @@ h1{
 }
 
 .card:hover{
-    border: 3px solid yellow;
+    border: 3px solid var(--primary-yellow);
     transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(255, 209, 0, 0.2);
@@ -67,7 +119,7 @@ h1{
     justify-content:center;
     align-items: center;
     height: 40%;
-    background-color: yellow;
+    background-color: var(--primary-yellow);
     border-radius: 15px 15px 0 0;
 }
 
@@ -123,7 +175,7 @@ span{
 }
 
 .links a{
-    color: yellow;
+    color: var(--primary-yellow);
     text-decoration: none;
     font-size: 1.2rem;
 }
