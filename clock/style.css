@@ -11,6 +11,8 @@ body{
     display: flex;
     place-content: center;
     place-items: center;
+    flex-direction: column;
+    gap: 10vh;
 }
 
 div{
