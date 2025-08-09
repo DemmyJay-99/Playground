@@ -58,3 +58,7 @@ i{
     place-content: center;
     place-items: center;
 }
+
+#resultDisplay{
+    font-size: 2.9rem;
+}
