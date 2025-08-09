@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="icons">
+        <i class="fa-solid fa-hand-back-fist" onclick="playGame('rock')"></i>
+        <i class="fa-solid fa-hand" onclick="playGame('paper')"></i>
+        <i class="fa-solid fa-hand-peace" onclick="playGame('scissors')"></i>
+    </div>
+    <div class="text">
+        <p>Rock</p>
+        <p>Paper</p>
+        <p>Scissors</p>
+    </div>
+    <div class="score">
+        <h2 id="playerDisplay">You picked:</h2>
+        <h2 id="compDisplay">Computer:</h2>
+        <h2 id="resultDisplay"></h2>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

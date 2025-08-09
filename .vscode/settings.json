@@ -1,3 +1,26 @@
 {
-    "liveServer.settings.port": 5502
+  "emmet.triggerExpansionOnTab": true,
+    "liveServer.settings.port": 5502,
+
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  "emmet.syntaxProfiles": {
+    "html": {
+      "inline_break": 1
+    }
+  },
+
+  "emmet.preferences": {
+    "output.format": true
+  },
+
+  // Use VS Code's built-in HTML formatter (so Prettier won't reformat HTML)
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  }
 }
